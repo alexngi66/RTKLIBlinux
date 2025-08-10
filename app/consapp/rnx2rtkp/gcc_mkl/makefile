@@ -3,25 +3,25 @@
 BINDIR  = /usr/local/bin
 SRC     = ../../../../src
 
-OPTS    = -DTRACE -DENAGLO -DENAQZS -DENAGAL -DENACMP -DENAIRN -DNFREQ=4 -DNEXOBS=3
-#OPTS    = -DENAGLO -DENAQZS -DENAGAL -DENACMP -DNFREQ=2
+OPTIONS    ?= -DTRACE -DENAGLO -DENAQZS -DENAGAL -DENACMP -DENAIRN -DNFREQ=6 -DNEXOBS=3
+#OPTIONS    ?= -DENAGLO -DENAQZS -DENAGAL -DENACMP -DNFREQ=6
 
 # for no lapack
-#CFLAGS  = -std=c99 -Wall -O3 -pedantic -Wno-unused-but-set-variable -I$(SRC) $(OPTS) -g
+#CFLAGS  = -std=c99 -Wall -O3 -pedantic -Wno-unused-but-set-variable -I$(SRC) $(OPTIONS) -g
 #LDLIBS  = -lm -lrt
 
-#CFLAGS  = -std=c99 -Wall -O3 -pedantic -Wno-unused-but-set-variable -I$(SRC) -DLAPACK $(OPTS)
+#CFLAGS  = -std=c99 -Wall -O3 -pedantic -Wno-unused-but-set-variable -I$(SRC) -DLAPACK $(OPTIONS)
 #LDLIBS  = -lm -lrt -llapack -lblas
 
 # for gprof
-#CFLAGS  = -std=c99 -Wall -O3 -pedantic -Wno-unused-but-set-variable -I$(SRC) -DLAPACK $(OPTS) -pg
+#CFLAGS  = -std=c99 -Wall -O3 -pedantic -Wno-unused-but-set-variable -I$(SRC) -DLAPACK $(OPTIONS) -pg
 #LDLIBS  = -lm -lrt -llapack -lblas -pg
 
 # for mkl
 #MKLDIR  = /opt/intel/mkl
 MKLDIR  = /proj/madoca/lib/mkl
-#CFLAGS  = -std=c99 -O3 -pedantic -Wno-unused-but-set-variable -I$(SRC) $(OPTS) -DMKL -g
-CFLAGS  = -std=c99 -O2 -pedantic -Wno-unused-but-set-variable -I$(SRC) $(OPTS) -DMKL -g
+#CFLAGS  = -std=c99 -O3 -pedantic -Wno-unused-but-set-variable -I$(SRC) $(OPTIONS) -DMKL -g
+CFLAGS  = -std=c99 -O2 -pedantic -Wno-unused-but-set-variable -I$(SRC) $(OPTIONS) -DMKL -g
 LDLIBS  = -L$(MKLDIR)/intel64 -lmkl_intel_lp64 -lmkl_core -lmkl_gnu_thread -lpthread -lgomp -lm -lrt
 
 all        : rnx2rtkp
