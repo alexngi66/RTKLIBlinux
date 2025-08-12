@@ -4,7 +4,7 @@ file(READ "src/rtklib.h" ver)
 
 string(REGEX MATCH "VER_RTKLIB[ ]+\"([a-zA-Z0-9]*)\"" _ ${ver})
 set(VERSION ${CMAKE_MATCH_1})
-string(REGEX MATCH "PATCH_LEVEL[ ]+\"([a-zA-Z0-9]*)\"" _ ${ver})
+string(REGEX MATCH "PATCH_LEVEL[ ]+\"([a-zA-Z0-9\.]*)\"" _ ${ver})
 set(PATCH_LEVEL ${CMAKE_MATCH_1})
 
 message("RTKLIB version: ${VERSION}-${PATCH_LEVEL}")
@@ -18,7 +18,7 @@ option(IERS_MODEL "Use Earth models from IERS" OFF)
 set(TEST_DATA_DIR ${CMAKE_CURRENT_SOURCE_DIR}/test/data)
 
 # configure rtklib
-add_definitions(-DENAGLO -DENAQZS -DENACMP -DENAGAL -DENAIRN -DNFREQ=3 -DNEXOBS=3 -DTRACE -DSVR_REUSEADDR)
+add_definitions(-DENAGLO -DENAQZS -DENACMP -DENAGAL -DENAIRN -DNFREQ=6 -DNEXOBS=3 -DTRACE -DSVR_REUSEADDR)
 
 
 # 3rd party libs
