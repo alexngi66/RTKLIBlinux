@@ -8,7 +8,7 @@ WINDOWS: To build and install code for with Windows Embarcadero compiler but is 
 
 For linux, use QT Creator. 
 GUIs: 
-1) Build executables with app/qtapp/qtapp.pro project file 
+1) Build executables with app/qtapp/qtapp.pro project file modifying defines in .pri files.
 2) Install executables /usr/local/bin
 
 CUIs:
@@ -34,10 +34,10 @@ CUIs:
 1) cd app/consapp/<appName>/gcc
 2) make
 
-GUIs (Qt based): (DEPREACATED and using QT Creator)
-1) cd app/qtapp
-2) qmake
-3) make
-4) ./install_qtapp
+GUIs (Qt based): (QTcreator community edition use and selected 5.15.2 tool chain)
+1) Make sure path for qmake is in the path with .bashrc export PATH="/path/Tools/version/gcc_64/bin:$PATH"
+2) cd app/qtapp
+3) qmake qtapp.pro # creates makefile
+4) make
 
 
