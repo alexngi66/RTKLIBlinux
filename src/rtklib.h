@@ -71,7 +71,7 @@ extern "C" {
 
 /* constants -----------------------------------------------------------------*/
 
-#define VER_RTKLIB  "EX-LINUX"             /* library version */
+#define VER_RTKLIB  "EXLINUX"             /* library version */
 
 #define PATCH_LEVEL "2.5.0"               /* patch level */
 
