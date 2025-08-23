@@ -38,7 +38,7 @@
          <string/>
         </property>
         <property name="text">
-         <string>Output &amp;Waypoint</string>
+         <string>Output Waypoint</string>
         </property>
         <property name="buddy">
          <cstring>cBPointColor</cstring>
@@ -67,7 +67,7 @@
          <string/>
         </property>
         <property name="text">
-         <string>Time Sp&amp;an</string>
+         <string>Time Span</string>
         </property>
        </widget>
       </item>
@@ -183,7 +183,7 @@
          <string/>
         </property>
         <property name="text">
-         <string>Add &amp;Offset E/N/U</string>
+         <string>Add Offset E/N/U</string>
         </property>
        </widget>
       </item>
@@ -240,7 +240,7 @@
          <string/>
         </property>
         <property name="text">
-         <string>Output &amp;Track</string>
+         <string>Output Track</string>
         </property>
         <property name="buddy">
          <cstring>cBTrackColor</cstring>
@@ -266,7 +266,7 @@
          <string/>
         </property>
         <property name="text">
-         <string>Q-&amp;Flags</string>
+         <string>Q-Flags</string>
         </property>
         <property name="buddy">
          <cstring>cBQFlags</cstring>
@@ -488,7 +488,7 @@
          <string/>
         </property>
         <property name="text">
-         <string>Output &amp;Altitude</string>
+         <string>Output Altitude</string>
         </property>
         <property name="buddy">
          <cstring>cBOutputAltitude</cstring>
@@ -501,7 +501,7 @@
          <string/>
         </property>
         <property name="text">
-         <string>I&amp;nterval</string>
+         <string>Interval (s)</string>
         </property>
        </widget>
       </item>

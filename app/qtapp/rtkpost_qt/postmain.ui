@@ -460,7 +460,7 @@
             <string/>
            </property>
            <property name="text">
-            <string>RINEX NAV/CLK, SP3, Bias-SINEX, IONEX, SBS/EMS  or RTCM</string>
+            <string>RINEX NAV/CLK, SP3, BIA/BSX, FCB, IONEX, SBS/EMS  or RTCM</string>
            </property>
           </widget>
          </item>
@@ -617,7 +617,7 @@
             <string>Enable output directory selection</string>
            </property>
            <property name="text">
-            <string>Directory</string>
+            <string>Dir</string>
            </property>
           </widget>
          </item>
@@ -792,7 +792,7 @@
          <string>Generate KML / GPX file from result</string>
         </property>
         <property name="text">
-         <string>KML/GPX...</string>
+         <string>&amp;KML/GPX...</string>
         </property>
        </widget>
       </item>
@@ -830,7 +830,7 @@
          <string>Abort</string>
         </property>
         <property name="text">
-         <string>Abort</string>
+         <string>&amp;Abort</string>
         </property>
         <property name="icon">
          <iconset resource="../icon/resources.qrc">
