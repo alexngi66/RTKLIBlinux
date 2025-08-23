@@ -289,7 +289,7 @@
        <item row="8" column="0" colspan="2">
         <widget class="QLabel" name="lbOutputFile">
          <property name="text">
-          <string>RINEX OBS/NAV/GNAV/HNAV/QNAV/LNAV and SBS</string>
+          <string>RINEX OBS/NAV/GNAV/HNAV/QNAV/LNAV/CNAV/INAV and SBS</string>
          </property>
         </widget>
        </item>
@@ -430,7 +430,7 @@
          <item row="0" column="0">
           <widget class="QLabel" name="lbInputFile">
            <property name="text">
-            <string>Input (RTCM, RCV RAW or RINEX OBS)</string>
+            <string>RTCM, RCV RAW or RINEX OBS</string>
            </property>
           </widget>
          </item>
