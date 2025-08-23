@@ -423,7 +423,7 @@
          <string/>
         </property>
         <property name="text">
-         <string>Receiver Options</string>
+         <string>Opt</string>
         </property>
        </widget>
       </item>
@@ -433,7 +433,7 @@
          <string/>
         </property>
         <property name="text">
-         <string>Stream Type</string>
+         <string>Type</string>
         </property>
        </widget>
       </item>
@@ -542,7 +542,7 @@
          <string/>
         </property>
         <property name="text">
-         <string>Stream Options</string>
+         <string>Opt</string>
         </property>
        </widget>
       </item>

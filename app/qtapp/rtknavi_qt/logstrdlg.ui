@@ -42,7 +42,7 @@
       <item>
        <widget class="QLabel" name="lblSwapInterval">
         <property name="text">
-         <string>Swap Interval</string>
+         <string>Swap Intv</string>
         </property>
         <property name="buddy">
          <cstring>cBSwapInterval</cstring>

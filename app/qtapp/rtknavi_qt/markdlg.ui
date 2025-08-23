@@ -35,11 +35,11 @@
     </widget>
    </item>
    <item row="7" column="0" colspan="2">
-    <widget class="QLabel" name="lblPosition">
-     <property name="text">
-      <string>Latitutde / Longitude / Height</string>
-     </property>
-    </widget>
+         <widget class="QLabel" name="lblPosition">
+      <property name="text">
+       <string>Lat/Lon/Height (deg/m)</string>
+      </property>
+     </widget>
    </item>
    <item row="9" column="0">
     <layout class="QHBoxLayout" name="horizontalLayout_2">
