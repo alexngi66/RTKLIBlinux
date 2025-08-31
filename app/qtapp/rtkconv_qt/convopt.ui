@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>819</width>
-    <height>636</height>
+    <width>1068</width>
+    <height>749</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -29,19 +29,19 @@
       <property name="bottomMargin">
        <number>0</number>
       </property>
-             <item>
-        <widget class="QLabel" name="lbRinexVersion">
-         <property name="toolTip">
-          <string/>
-         </property>
-         <property name="text">
-          <string>RINEX Ver</string>
-         </property>
-         <property name="buddy">
-          <cstring>cBRinexVersion</cstring>
-         </property>
-        </widget>
-       </item>
+      <item>
+       <widget class="QLabel" name="lbRinexVersion">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>RINEX Ver</string>
+        </property>
+        <property name="buddy">
+         <cstring>cBRinexVersion</cstring>
+        </property>
+       </widget>
+      </item>
       <item>
        <widget class="QComboBox" name="cBRinexVersion">
         <property name="toolTip">
@@ -136,35 +136,6 @@
         </property>
         <property name="text">
          <string>0000</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="lbTimeTolerance">
-        <property name="text">
-         <string>Time Tolerance (s)</string>
-        </property>
-        <property name="buddy">
-         <cstring>sBTimeTolerance</cstring>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QDoubleSpinBox" name="sBTimeTolerance">
-        <property name="toolTip">
-         <string>Time tolerance for start and stop time</string>
-        </property>
-        <property name="suffix">
-         <string> s</string>
-        </property>
-        <property name="decimals">
-         <number>4</number>
-        </property>
-        <property name="singleStep">
-         <double>0.001000000000000</double>
-        </property>
-        <property name="value">
-         <double>0.005000000000000</double>
         </property>
        </widget>
       </item>
@@ -309,11 +280,11 @@
         <property name="decimals">
          <number>4</number>
         </property>
-        <property name="maximum">
-         <double>10000000.000000000000000</double>
-        </property>
         <property name="minimum">
          <double>-10000000.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>10000000.000000000000000</double>
         </property>
        </widget>
       </item>
@@ -328,11 +299,11 @@
         <property name="decimals">
          <number>4</number>
         </property>
-        <property name="maximum">
-         <double>10000000.000000000000000</double>
-        </property>
         <property name="minimum">
          <double>-10000000.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>10000000.000000000000000</double>
         </property>
        </widget>
       </item>
@@ -441,11 +412,11 @@
         <property name="decimals">
          <number>4</number>
         </property>
-        <property name="maximum">
-         <double>10000000.000000000000000</double>
-        </property>
         <property name="minimum">
          <double>-10000000.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>10000000.000000000000000</double>
         </property>
        </widget>
       </item>
@@ -476,39 +447,6 @@
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_8">
       <item>
-       <widget class="QCheckBox" name="cBOutputIonoCorr">
-        <property name="toolTip">
-         <string>Output ionospheric corrections</string>
-        </property>
-        <property name="text">
-         <string>Ionospheric Correction</string>
-        </property>
-        <property name="checked">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QCheckBox" name="cBHalfCycle">
-        <property name="toolTip">
-         <string>Output half cycle correction</string>
-        </property>
-        <property name="text">
-         <string>Half Cycle Correction</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QCheckBox" name="cBSortSats">
-        <property name="toolTip">
-         <string>Sort observations by their internal satellite number</string>
-        </property>
-        <property name="text">
-         <string>Sort Satellites</string>
-        </property>
-       </widget>
-      </item>
-      <item>
        <widget class="QCheckBox" name="cBPhaseShift">
         <property name="toolTip">
          <string>Output phase shift correction</string>
@@ -522,12 +460,45 @@
        </widget>
       </item>
       <item>
+       <widget class="QCheckBox" name="cBHalfCycle">
+        <property name="toolTip">
+         <string>Output half cycle correction</string>
+        </property>
+        <property name="text">
+         <string>Half Cyc Corr</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="cBSortSats">
+        <property name="toolTip">
+         <string>Sort observations by their internal satellite number</string>
+        </property>
+        <property name="text">
+         <string>Sort</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="cBOutputIonoCorr">
+        <property name="toolTip">
+         <string>Output ionospheric corrections</string>
+        </property>
+        <property name="text">
+         <string>Iono Corr</string>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
        <widget class="QCheckBox" name="cBOutputLeapSecs">
         <property name="toolTip">
          <string>Output leap seconds</string>
         </property>
         <property name="text">
-         <string>Leap Seconds</string>
+         <string>Leap Sec</string>
         </property>
        </widget>
       </item>
@@ -537,7 +508,7 @@
          <string>Output time system correction</string>
         </property>
         <property name="text">
-         <string>Time Correction</string>
+         <string>Time Corr</string>
         </property>
         <property name="checked">
          <bool>false</bool>
@@ -680,6 +651,12 @@
       </property>
       <item>
        <widget class="QGroupBox" name="groupBox3">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>84</height>
+         </size>
+        </property>
         <property name="toolTip">
          <string>Observation types to include</string>
         </property>
@@ -857,6 +834,51 @@
     </widget>
    </item>
    <item>
+    <widget class="QFrame" name="frame_2">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="lBReceiverOptions">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>115</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Receiver Options</string>
+      </property>
+      <property name="buddy">
+       <cstring>lEReceiverOptions</cstring>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lEReceiverOptions">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>10</y>
+        <width>891</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Additional receiver specific options</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item>
     <widget class="QWidget" name="widget" native="true">
      <layout class="QHBoxLayout" name="horizontalLayout_4">
       <property name="leftMargin">
@@ -872,74 +894,141 @@
        <number>0</number>
       </property>
       <item>
-       <widget class="QLabel" name="lBReceiverOptions">
-        <property name="text">
-         <string>Receiver Options</string>
+       <widget class="QFrame" name="frame">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>24</height>
+         </size>
         </property>
-        <property name="buddy">
-         <cstring>lEReceiverOptions</cstring>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
         </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="lEReceiverOptions">
-        <property name="toolTip">
-         <string>Additional receiver specific options</string>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
         </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="lbDebug">
-        <property name="text">
-         <string>Debug</string>
-        </property>
-        <property name="buddy">
-         <cstring>cBTraceLevel</cstring>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QComboBox" name="cBTraceLevel">
-        <property name="toolTip">
-         <string>Generate debug output</string>
-        </property>
-        <item>
-         <property name="text">
-          <string>OFF</string>
+        <widget class="QLabel" name="lbTimeTolerance">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>0</y>
+           <width>122</width>
+           <height>63</height>
+          </rect>
          </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Level 1</string>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>24</height>
+          </size>
          </property>
-        </item>
-        <item>
          <property name="text">
-          <string>Level 2</string>
+          <string>Time Tolerance (s)</string>
          </property>
-        </item>
-        <item>
+         <property name="buddy">
+          <cstring>sBTimeTolerance</cstring>
+         </property>
+        </widget>
+        <widget class="QDoubleSpinBox" name="sBTimeTolerance">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>20</y>
+           <width>92</width>
+           <height>27</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>Time tolerance for start and stop time</string>
+         </property>
+         <property name="suffix">
+          <string> s</string>
+         </property>
+         <property name="decimals">
+          <number>4</number>
+         </property>
+         <property name="singleStep">
+          <double>0.001000000000000</double>
+         </property>
+         <property name="value">
+          <double>0.005000000000000</double>
+         </property>
+        </widget>
+        <widget class="QLabel" name="lbDebug">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>0</y>
+           <width>45</width>
+           <height>63</height>
+          </rect>
+         </property>
          <property name="text">
-          <string>Level 3</string>
+          <string>Debug</string>
          </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Level 4</string>
+         <property name="buddy">
+          <cstring>cBTraceLevel</cstring>
          </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Level 5</string>
+        </widget>
+        <widget class="QComboBox" name="cBTraceLevel">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>20</y>
+           <width>75</width>
+           <height>26</height>
+          </rect>
          </property>
-        </item>
-       </widget>
-      </item>
-      <item>
-       <widget class="QDialogButtonBox" name="buttonBox">
-        <property name="standardButtons">
-         <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
-        </property>
+         <property name="toolTip">
+          <string>Generate debug output</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>OFF</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Level 1</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Level 2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Level 3</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Level 4</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Level 5</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QDialogButtonBox" name="buttonBox">
+         <property name="geometry">
+          <rect>
+           <x>840</x>
+           <y>20</y>
+           <width>181</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::RightToLeft</enum>
+         </property>
+         <property name="standardButtons">
+          <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+         </property>
+        </widget>
        </widget>
       </item>
      </layout>
@@ -952,12 +1041,12 @@
   <zorder>widget_3</zorder>
   <zorder>widget_4</zorder>
   <zorder>gBOptions</zorder>
+  <zorder>frame_2</zorder>
  </widget>
  <tabstops>
   <tabstop>cBRinexVersion</tabstop>
   <tabstop>cBSeperateNavigation</tabstop>
   <tabstop>lERinexStationCode</tabstop>
-  <tabstop>sBTimeTolerance</tabstop>
   <tabstop>cBRinexFilename</tabstop>
   <tabstop>lERunBy</tabstop>
   <tabstop>lEObserver</tabstop>
@@ -980,8 +1069,6 @@
   <tabstop>sBAntennaDelta1</tabstop>
   <tabstop>sBAntennaDelta2</tabstop>
   <tabstop>cBOutputIonoCorr</tabstop>
-  <tabstop>cBHalfCycle</tabstop>
-  <tabstop>cBPhaseShift</tabstop>
   <tabstop>cBOutputLeapSecs</tabstop>
   <tabstop>cBOutputTimeCorr</tabstop>
   <tabstop>cBNavSys1</tabstop>
@@ -994,7 +1081,6 @@
   <tabstop>lEExcludedSatellites</tabstop>
   <tabstop>cBObservationTypeC</tabstop>
   <tabstop>cBObservationTypeL</tabstop>
-  <tabstop>cBObservationTypeD</tabstop>
   <tabstop>cBObservationTypeS</tabstop>
   <tabstop>cBFreq1</tabstop>
   <tabstop>cBFreq2</tabstop>
@@ -1005,8 +1091,6 @@
   <tabstop>btnMask</tabstop>
   <tabstop>btnFcn</tabstop>
   <tabstop>btnFrequencies</tabstop>
-  <tabstop>lEReceiverOptions</tabstop>
-  <tabstop>cBTraceLevel</tabstop>
  </tabstops>
  <resources/>
  <connections/>
