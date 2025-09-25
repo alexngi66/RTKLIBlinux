@@ -202,20 +202,20 @@ const double chisqr[100]={      /* chi-sqr(n) (alpha=0.001) */
     138 ,139 ,140 ,142 ,143 ,144 ,145 ,147 ,148 ,149
 };
 const prcopt_t prcopt_default={ /* defaults processing options */
-    PMODE_KINEMA,SOLTYPE_FORWARD, /* mode,soltype */
-    2,SYS_GPS|SYS_GLO|SYS_GAL,  /* nf, navsys */
+    PMODE_SINGLE,SOLTYPE_FORWARD, /* mode,soltype */
+    2,SYS_GPS|SYS_GLO|SYS_GAL|SYS_CMP,  /* nf, navsys */
     15.0*D2R,{{0,0}},           /* elmin,snrmask */
-    0,3,3,1,0,1,                /* sateph,modear,glomodear,gpsmodear,bdsmodear,arfilter */
-    20,0,4,5,10,20,             /* maxout,minlock,minfixsats,minholdsats,mindropsats,minfix */
-    1,1,1,1,0,                  /* armaxiter,estion,esttrop,dynamics,tidecorr */
+    0,1,1,1,1,1,                /* sateph,modear,glomodear,gpsmodear,bdsmodear,arfilter */
+    5,0,4,5,10,10,             /* maxout,minlock,minfixsats,minholdsats,mindropsats,minfix */
+    1,0,0,1,0,                  /* armaxiter,estion,esttrop,dynamics,tidecorr */
     1,0,0,0,0,                  /* niter,codesmooth,intpref,sbascorr,sbassatsel */
     0,0,                        /* rovpos,refpos */
-    {300.0,300.0,300.0,300.0},  /* eratio[] */
+    {100.0,100.0,100.0,100.0},  /* eratio[] */
     {100.0,0.003,0.003,0.0,1.0,52.0,0.0,0.0}, /* err[-,base,el,bl,dop,snr_max,snr,rcverr] */
     {30.0,0.03,0.3},            /* std[] */
     {1E-4,1E-3,1E-4,1E-1,1E-2,0.0}, /* prn[] */
     5E-12,                      /* sclkstab */
-    {3.0,0.25,0.0,1E-9,1E-5,3.0,3.0,0.0}, /* thresar */
+    {3.0,0.999,0.2,1E-9,1E-5,3.0,3.0,0.0}, /* thresar */
     0.0,0.0,0.05,0,             /* elmaskar,elmaskhold,thresslip,thresdop, */
     0.1,0.01,30.0,              /* varholdamb,gainholdamb,maxtdif */
     {5.0,30.0},                 /* maxinno {phase,code} */
